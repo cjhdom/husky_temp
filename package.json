@@ -1,0 +1,32 @@
+{
+  "name": "husky_temp",
+  "version": "1.0.0",
+  "description": "husky smartgit test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjhdom/husky_temp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjhdom/husky_temp/issues"
+  },
+  "homepage": "https://github.com/cjhdom/husky_temp#readme",
+  "dependencies": {
+    "eslint": "^7.15.0",
+    "husky": "^4.3.5"
+  },
+  "lint-staged": {
+    "**/*.{js}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
